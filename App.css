@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+
+form {
+  white-space: pre-wrap;
+}
+
+.button {
+  background-color: #DC143C;
+  border: none;
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: #DC143C;
+  border: none;
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
