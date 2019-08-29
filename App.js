@@ -4,31 +4,27 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Notes</h2>
+      <div className="wrapper">
+         <div className="form-wrapper">
+           <h1>Notes here please</h1>
+           <form onSubmit ={this.handleSubmit} noValidate>
+            <div className ="Title">
+              <label htmlFor="Title">Title</label>
+              <input type="text" noValidate className="" placeholder="Title in here" type="text" name="Title" onChange={this.handleChange}/> 
+              {/* not be validated when submitted*/}
+              </div>
+              <div className ="Author">
+              <label htmlFor="Author">Author</label>
+              <input type="text" noValidate className="" placeholder="Author in here" type="text" name="Author" onChange={this.handleChange}/> 
+              {/* not be validated when submitted*/}
+              </div>
+              <div className ="Message">
+              <label htmlFor="Message">Message</label>
+              <input type="text" noValidate className="" placeholder="Message in here" type="text" name="Message" onChange={this.handleChange}/> 
+              {/* not be validated when submitted*/}
+              </div>
+           </form>
         </div>
-        <form>
-        <label>
-          Title:
-          <input type="text" />
-          {"\n"}
-          {"\n"}
-          Author:
-          <input type="text" />
-          {"\n"}
-          {"\n"}
-          Message:
-          <input type="text" />
-          {"\n"}
-          {"\n"}
-        </label>
-        {"\n"}
-        <input className="button" type="submit" value="Submit" />
-        {"\n"}
-        <input className="delete" type="delete" value="Delete note" />
-      </form>
- 
       </div>
     );
   }
