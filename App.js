@@ -2,26 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
- constructor(props) {
-   super(props);
-
-   this.state = {
-     Title: null,
-     Author: null,
-     Message:null,
-     formErrors: {
-       Title: "",
-       Author:"",
-       Message:"",
-     }
-   };
- } 
-
  handleSubmit = e => {
    e.preventDefault();
    {/* not going to another page but just staying on the mainpage*/}
- }; 
-
+}; 
  render() {
     return (
       <div className="wrapper">
@@ -46,17 +30,13 @@ class App extends Component {
               <div className ="Submit">
                 <button type="submit">Submit</button>
               </div>
-              <div className ="Submit">
-                <button type="submit">Edit</button>
-              </div>
-              <div className ="Submit">
-                <button type="submit">Delete</button>
-              </div>
            </form>
         </div>
       </div>
     );
   }
 }
+
+
 
 export default App;
